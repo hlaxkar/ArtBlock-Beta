@@ -1,0 +1,56 @@
+<div class="w-full h-full flex flex-col px-10 py-12">
+    <h1 class="text-4xl font-bold">Log In</h1>
+    <div class="h-3/5 flex flex-col">
+        <div class="mt-10  h-full">
+            <form action="?">
+                <div class="flex h-full flex-col justify-between">
+
+                    <div class="text-sm">
+                        <label for="username" class="block w-full">Username</label>
+                        <div class="input-field-box">
+                            <input [(ngModel)]="loginObj.userName" type="text" name="username" id="username" class="input-field" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="text-sm">
+                        <label for="password" class="block w-full ">Password</label>
+                        <div class="input-field-box">
+                            <input [(ngModel)]="loginObj.password" type="password" name="password" id="password" class="input-field"
+                                placeholder="Password">
+                        </div>
+                    </div>
+
+
+                    <div class="flex justify-between text-sm mb-4">
+                        <div class="flex items-center">
+                            <input [(ngModel)]="loginObj.keeplog" type="checkbox" name="keepsignin" id="">
+                            <label  for="keepsignin" class="ml-1">Keep me logged in</label>
+                        </div>
+
+                        <h3 class="hover:text-yellow_text decoration-gray_text"><a href="#"> Forgot username or
+                                password?</a></h3>
+                    </div>
+                    <button (click)="onLogin()" class="w-full h-10 bg-dark_bg hover:bg-opacity-50 rounded-lg">Log in</button>
+                </div>
+            </form>
+
+        </div>
+        <div>
+            <div class="flex items-center">
+                <div class="w-full h-1 border-solid border-b-black">
+                    <hr>
+                </div>
+                <div class="px-3">or</div>
+                <div class="w-full h-1 border-b-black">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="w-full p-1 bg-white text-black mb-1 font-semibold border-2 border-black ">Continue with Google</button>
+    <button class="w-full p-1 bg-white text-black mb-1 font-semibold border-2 border-black ">Continue with Google</button>
+    <button class="w-full p-1 bg-white text-black mb-1 font-semibold border-2 border-black ">Continue with Google</button>
+    <br>
+    <h6>Become a Deviant, <a href="#"> Join ArtBlock</a></h6>
+
+</div>

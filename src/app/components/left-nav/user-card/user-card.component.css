@@ -1,0 +1,63 @@
+.Profile_container {
+    /* width: 17rem; */
+    /* min-width: 19rem; */
+    /* height: 26rem; */
+    /* min-height: 30rem; */
+    background-color: var(--second_bg);
+    display: flex;
+    color: var(--second_text);
+    border-radius: 1.7em;
+    flex-direction: column;
+    overflow: hidden;
+}
+.con-1 {
+    
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+}
+.pro-section{
+    height: 70%;
+}
+.pfp {
+    width: 110px;
+    height: 110px;
+    border-radius: 1.7rem;
+    box-sizing: border-box;
+    margin-top: -20%;
+    border: var(--dark_bg) 6.5px solid;
+    overflow: hidden;
+    /* background-image: url(images/pfp.webp); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.username {
+    color: var(--gray_text);
+}
+.btn {
+    text-align: center;
+    background: var(--btn_bg);
+    font-weight: bold;
+    transition: 200ms ease-in;
+    color: var(--gray_text);
+}
+
+.profile-btn {
+    /* width: 100%;
+    height: 30%; */
+    border-top: hsl(0, 0%, 13%) solid 2px;
+    padding: 15px 8px 0;
+    /* transition: 0.5s ease-in; */
+}
+.gray{
+    color: var(--gray_text)
+}
+.bio{
+    color: var(--second_text);
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: #3b3b3b;
+
+}

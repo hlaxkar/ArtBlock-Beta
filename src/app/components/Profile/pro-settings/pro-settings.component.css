@@ -1,0 +1,237 @@
+
+.main-div{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* font-family: "Hammersmith one"; */
+    border-radius: 27px;
+    overflow: scroll;
+    /* overflow: hidden; */
+    /* box-shadow: 0px 11px 20px 10px lightblue; */
+
+
+}
+
+
+.profile-picture {
+    width: 25%;
+    height: 100%;
+    /* background-color: #00ABB3; */
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.name-div {
+    width: 100%;
+    /* height: 33%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.name-div p {
+    margin-top: 25px;
+    color: white;
+}
+
+.name-div div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.name-div div {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.name-div div i {
+    position: absolute;
+    bottom: 15px;
+    right: -1px;
+    color: white;
+}
+
+.Dashboard {
+    width: 100%;
+    /* height: 60%; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.logout {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.Dashboard-ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.logout p {
+    margin-left: 10px;
+}
+
+.Dashboard-ul button {
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    /* background-color: #00ABB3; */
+    /* color: white; */
+
+}
+
+.Dashboard-ul li {
+    margin-top: 30px;
+    position: relative;
+}
+
+.Dashboard-ul li i {
+    margin-left: 45px;
+    /* color: white; */
+}
+
+.logout i {
+    margin-left: 45px;
+    color: white;
+}
+
+.logout button {
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    /* background-color: #00ABB3; */
+    /* color: white; */
+}
+
+.personal-info {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.profile-password{
+width: 100%;
+height: 90%;
+display: flex;
+margin-top: 20px;
+}
+
+.first-heading{
+    color: grey;
+    font-size: 30px;
+    margin: 10px;
+    padding-left: 20%;
+    padding-top: 10px;
+}
+
+.name-form {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    flex-direction: column;
+}
+
+.password{
+    width: 30%;
+    height: 100%;
+}
+
+.profile-form{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+.name-form-1{
+    width: 50%;
+}
+.phone-div{
+width: 50%;
+}
+
+label{
+    font-size: 13px;
+    padding-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.name-form h1{
+    font-size: 25px;
+    color: grey;
+}
+.password h1{
+    font-size: 25px;
+    color: grey;
+}
+
+input{
+    border: 00 solid grey;
+    padding: 12px;
+    border-radius: 13px;
+    background-color: lightgrey;
+}
+select{
+    border: 00 solid grey;
+    padding: 12px;
+    border-radius: 13px;
+    background-color: lightgrey;
+}
+
+.correct{
+    padding: 15px 50px;
+    background-color: #00ABB3;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 60px;
+    color: white;
+}
+button{
+    cursor: pointer;
+
+}
+button:hover{
+ opacity: 80%;
+}
+
+.asterisk{
+    color: red;
+}
+
+li::after{
+    content: '';
+    width: 63px;
+    background-color: white;
+    top: 10px;
+    right: -160px;
+    position: absolute;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+li:hover::after{
+    right: -92px;
+}

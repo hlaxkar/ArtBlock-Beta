@@ -1,0 +1,71 @@
+<!-- <div class="w-full py-4 bg-gray-700">
+  <div class="flex justify-center">
+    <div class="text-red-400">
+      <span class="px-4">Button1</span>
+      <span class="px-4">Button2</span>
+      <span class="px-4">Button3</span>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="h-auto flex p-2 bg-[#1a1a1a]">
+
+
+  <div class="flex items-center">
+    <span class="inline">
+      <img src="../../../assets/image/pfp5.webp" class="w-6 h-6 mt-1 mr-10" />
+    </span>
+
+
+    <input type="search"
+      class="bg-[#282828] text-[#FCF3fd] border-0 focus:border-y-yellow_text focus:border-2 placeholder:bold placeholder:text-gray_text rounded-2xl inline py-1 px-4 h-8"
+      placeholder="#Explore"  />
+
+  </div>
+  <div class="w-full flex items-center justify-center text-prime_text">
+
+    <div class="ml-9">
+      <a href='#' routerLink="/Login" routerLinkActive="text-yellow_text" class="hover:text-yellow_text focus:text-yellow-400 ">
+        <!-- <img src="assets/home.png" class="hover:text-yellow-300 focus:text-yellow-500 w-6 h-6 mt-1 mx-6" /> -->
+        <i class="fa fa-home text-xl " aria-hidden="true"></i>
+
+      </a>
+    </div>
+    <div class="ml-9">
+      <button routerLink="" class="hover:text-yellow_text focus:text-yellow-400">
+        <!-- <img src="assets/messenger.png" class="mt-1 w-6 h-6 mx-6" /> -->
+        <i class="fa-regular text-xl fa-message focus:text-yellow_text"></i>
+
+
+      </button>
+    </div>
+    <div class="ml-9">
+      <button class="hover:text-yellow_text focus:text-yellow-400">
+        <!-- <img src="assets/bell.png" class="w-6 mt-1 h-6 mx-6" /> -->
+        <i class="fa-regular  fa-bell text-xl " aria-hidden="true"></i>
+
+      </button>
+    </div>
+    <div class="ml-9">
+      <button class="hover:text-yellow_text focus:text-yellow-400">
+        <!-- <img src="assets/heart.png" class="mt-1 w-6 h-6 mx-6" /> -->
+        <i class="fa-regular fa-heart fa-fw text-xl" aria-hidden="true"></i>
+
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="flex justify-end mx-6">
+    <div class="rounded-full px-3 py-1 bg-[#282828] w-40 flex">
+      <div class="w-6 h-6 rounded-full bg-slate-500 mr-3 mt-1">
+        <img src="home.svg" />
+      </div>
+      <div class="flex-shrink flex-wrap text-white mt-1">Even Ledo</div>
+    </div>
+  </div> -->
+
+<app-dropdown class="w-[350px]" [data]="userData"></app-dropdown>
+</div>

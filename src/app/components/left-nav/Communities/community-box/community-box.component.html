@@ -1,0 +1,18 @@
+<div class="w-full  text-prime_text">
+    <div class="flex justify-between  items-center">
+      <span class="ml-5">
+        <h1 class="text-xl ">Communities</h1>
+      </span>
+      <span class="text-xl"><a class="px-5" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <a class="px-5" href="#"><i class="fa fa-plus-square" aria-hidden="true"></i></a></span>
+    </div>
+  
+    <div class="w-full h-full p-3 ">
+  
+      <ng-container *ngFor="let item of groups; index as i">
+  
+        <app-community-item [data]="groups[i]"></app-community-item>
+        
+      </ng-container>
+    </div>
+  </div>

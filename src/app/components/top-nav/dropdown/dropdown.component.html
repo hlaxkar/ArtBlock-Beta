@@ -1,0 +1,21 @@
+<div class="relative text-second_text w-full">
+
+    <button class="transition-all relative w-full z-10 bg-third_bg flex items-center justify-between rounded-3xl p-2  cursor-pointer focus:rounded-b-none hover:bg-second_bg peer dropdown">
+
+
+        <span class=" w-[50px] overflow-hidden object-cover rounded-3xl">
+            <img class="" src="../../../../assets/image/app-image/{{data.pfp}}" alt="pfp">
+        </span>
+        <span class="w-full"><h2 class="text-base  text-center">{{data.userName}}</h2></span>
+        <i class="text-lg px-3 fa-solid fa-caret-up"></i>
+        <!-- <i class="text-lg px-3 fa-solid fa-caret-up"></i> -->
+    </button >
+    <div class="transition-all ease-in absolute max-h-0 w-full bg-btn_bg rounded-b-3xl dropdown-menu overflow-hidden peer-focus:max-h-56 focus:max-h-56 focus-within:max-h-56" >
+        <div class="pt-5">
+            <a href="#" routerLink="userprofile" class="text-center w-full px-4 py-2 block hover:bg-second_bg" >Profile</a>
+        <a href="#" class="text-center w-full px-4 py-2 block hover:bg-second_bg" >Bookmarks</a>
+        <a href="#" routerLink="profile-settings" class="text-center w-full px-4 py-2 block hover:bg-second_bg" >Account Settings</a>
+        <a href="#"  class="text-center w-full px-4 py-2 block hover:bg-second_bg" >LOGOUT</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.outer-box{
+    width: 856px;
+    border-radius: 1rem;
+    height: 690px;
+    /* padding: 11px; */
+    box-shadow: 0 40pt 50pt 0 rgb(0 0 0 / 35%);
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .outer-box{
+        flex-direction: column;
+    }
+    .leftbox{
+        height: fit-content;
+    }
+  }

@@ -1,0 +1,13 @@
+<div [scrollLeft]="" class="text-second_text py-4 flex overflow-x-scroll [&>*]:flex-shrink-0 [&>*]:w-[100px] [&>*:hover]:text-yellow hover:cursor-pointer">
+
+
+    <span class="" *ngFor="let item of [1,2,4,1,4,2,2,4]">
+        <div
+            class="border-2 border-second_bg overflow-hidden rounded-[24px] m-auto w-[70px] active:border-yellow hover:border-yellow ">
+            <img src="../../../assets/image/app-image/pfp{{item}}.png" alt="" srcset="">
+        </div>
+        <h3 class="text-center mt-[8px] ">{{item}}</h3>
+    </span>
+
+</div>
+<i class="fa-solid fa-circle-chevron-right text-second_bg text-2xl absolute right-[-2%] top-[40px] cursor-pointer" ></i>

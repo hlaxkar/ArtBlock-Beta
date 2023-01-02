@@ -1,0 +1,36 @@
+
+    <div class="w-full bg-second_bg min-h-max p-4 rounded-2xl">
+        <div class="flex w-full h-full">
+            <div class="flex mr-2 h-1/2 items-center justify-center">
+                <span class="w-14 h-auto overflow-hidden block rounded-2xl ">
+                    <img src="../../../assets/image/app-image/pfp2.png" alt="Your avatar">
+                </span>
+            </div>
+            <div class="flex flex-col w-full">
+                <div class="min-w-full mb-4 peer">
+                    <textarea
+                        class="peer p-4 text-prime_text block w-full h-14 outline-none placeholder:text-gray_text placeholder:text-sm placeholder:text-opacity-80 rounded-2xl bg-third_bg px-5 focus:h-32 transition-all"
+                        placeholder="Tell your friends.."></textarea>
+                </div>
+
+                <div class=" text-sm w-full text-gray_text font-bold gap-[9px] transition-all flex ">
+                    <label for="imagepick">
+                        <button  onclick="document.getElementById('imagepick').click()"
+                            class="p-4 py-2 hover:text-prime_text  bg-btn_bg transition-all  rounded-lg hover:bg-dark_bg group">
+                            <i class="fa-solid fa-image text-pink-400 group-hover:text-pink-300"></i> <span> +Photos
+                            </span>
+                        </button>
+                    </label>
+                    <input type="file" accept="jpeg" name="imagepick" id="imagepick" class="hidden">
+                    <button
+                        class=" p-4 py-2 peer  bg-btn_bg  rounded-lg transition-all hover:text-prime_text hover:bg-dark_bg group">
+                        <i class="fa-solid fa-tags text-green-400 group-hover:text-green-300"></i> <span>+Tags</span>
+                    </button>
+                    <input type="text"
+                        class=" bg-third_bg rounded-lg w-0 focus:w-56 peer-focus:w-56 transition-all ease-in-out " placeholder="Comma seprated tags">
+                    <button class="bg-yellow_text ml-auto rounded-lg p-4 py-2 text-black_text hover:opacity-80">Post</button>
+                </div>
+
+            </div>
+        </div>
+    </div>

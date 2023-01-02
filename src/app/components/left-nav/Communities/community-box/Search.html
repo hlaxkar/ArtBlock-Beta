@@ -1,0 +1,28 @@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<div class="w-full  text-prime_text">
+        <div class="flex justify-between  items-center">
+          <span class="peer-focus:hidden ml-5 focus:display-none disabled:opacity-75">
+            <h1 class="text-xl ">Communities
+            </h1>
+          </span>
+          <form action="" class="relative mx-auto w-max ">
+        <input type="search" 
+              class=" disabled:opacity-75 peer cursor-pointer relative z-10 h-10  w-12 rounded-full border bg-transparent pr-2 outline-none focus:w-max focus:cursor-text focus:border-slate-900 focus:pr-16 focus:pl-4"  />
+        <svg xmlns="http://www.w3.org/2000/svg" class=" peer absolute inset-y-0 my-auto h-8 w-12 right-0 border-l border-transparent stroke-gray-500 px-3.5 peer-focus:border-slate-600 peer-focus:stroke-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </form>
+      <div class="">
+            <a class="px-5" href="#"><i class="fa fa-plus-square" aria-hidden="true"></i></a></span>
+        </div>
+      
+        <div class="w-full h-full p-3 ">
+      
+          <ng-container *ngFor="let item of groups; index as i">
+      
+            <app-community-item [data]="groups[i]"></app-community-item>
+            
+          </ng-container>
+        </div>
+      </div>
