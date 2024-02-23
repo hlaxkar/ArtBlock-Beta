@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-new-post',
@@ -9,7 +9,7 @@ import { FormGroup } from '@angular/forms';
 export class NewPostComponent implements OnInit {
 
 
-  formGroup=new FormGroup({
+  formGroup=new UntypedFormGroup({
     
   })
 
