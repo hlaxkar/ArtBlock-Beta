@@ -14,4 +14,5 @@ export class ApiService{
   post<T>(apiPath:string,data:any):Observable<T>{
     return this.http.post<T>(environment.apiEndpoint+apiPath,data);
   }
+  
 }

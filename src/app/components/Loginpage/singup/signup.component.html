@@ -2,30 +2,49 @@
     <h1 class="text-4xl font-bold">Join ArtBlock</h1>
     <div class="h-3/5 flex flex-col">
         <div class="mt-10  mb-[40px]">
-            <form #signupForm="ngForm" (ngSubmit)="signupUser(signupForm.value)">
+            <form #signupForm="ngForm" (ngSubmit)="signupUser(signupForm.value);">
                 <div class="flex h-full flex-col justify-between">
 
-                    <div class="text-sm" [ngClass]="{'mb-6': useremail.invalid && useremail.touched, 'mb-10':useremail.valid || useremail.untouched}">
+                    <div class="text-sm"
+                        [ngClass]="{'mb-[8px]': useremail.invalid && useremail.touched, 'mb-[30px]':useremail.valid || useremail.untouched}">
                         <label for="username" class="block w-full">Add your email</label>
-                        <div class="input-field-box mb-2">
-                            <input ngModel required #useremail="ngModel" email type="text" name="useremail" id="useremail" class="input-field"
-                                placeholder="Username">
-                            </div>
-                            <div *ngIf="useremail.invalid && useremail.touched" class="text-red-500 ">Please enter a valid email</div>
+                        <div class="input-field-box mb-2"
+                        [ngClass]="{'border border-red-500': useremail.invalid && useremail.touched}" >
+                            <input ngModel required 
+                            #useremail="ngModel" email 
+                            type="text" 
+                            name="useremail"
+                            id="useremail"                            
+                            class="input-field" 
+                            placeholder="Username">
+                        </div>
+                        <div
+                             *ngIf="useremail.invalid && useremail.touched"
+                             class="text-red-500 ">
+                             Please enter a valid email
+                        </div>
                     </div>
 
-                    <div class="text-sm mb-2">
+                    <div class="text-sm mb-8">
                         <label for="password" class="block w-full ">Choose a Password</label>
                         <div class="input-field-box mb-2">
-                            <input ngModel required #password="ngModel" type="password" name="password" id="password" class="input-field"
-                                placeholder="Password" required="true"><span class="text-green-400 ">Strong</span>
+                            <input ngModel required 
+                            #password="ngModel" 
+                            type="password" 
+                            name="password" 
+                            id="password"
+                            class="input-field" 
+                            placeholder="Password" 
+                            minlength="6" 
+                            (ngModelChange)="calculateStrength(password.value.length)">
+                                <span class="px-1"
+                                [ngClass]="{'text-red-500':strength=='Weak', 'text-yellow-500':strength=='Medium','text-green-500':strength=='Strong'}">{{strength}}</span>
                         </div>
-                        <h6 class=" text-gray_text">Min 6 characters, numbers & letters</h6>
+                        <h6 [ngClass]="{'text-red-500':password.invalid && password.touched}" class=" text-gray_text">Min 6 characters, numbers & letters</h6>
                     </div>
 
 
-                    <button [disabled]="signupForm.invalid"
-                     type="submit"
+                    <button [disabled]="signupForm.invalid" type="submit"
                         class="w-full h-10 bg-dark_bg hover:bg-opacity-50 rounded-lg">Continue</button>
                 </div>
             </form>
@@ -43,12 +62,10 @@
             </div>
         </div>
     </div>
-    <button class="flex w-full p-1 bg-white text-black mb-1 font-semibold border-2 border-black "><i
-            class="float-left fa-brands fa-google"></i> <span class="center">Continue with Google</span> </button>
-    <button class="w-full p-1 bg-white text-black mb-1 font-semibold border-2 border-black "><i
-            class="fa-brands fa-facebook"></i>Continue with Facebook</button>
+    <button class="w-full p-1 bg-white text-black mb-1 font-semibold border-2 border-black ">Continue with Google</button>
+    <button class="w-full p-1 bg-white text-black mb-1 font-semibold border-2 border-black ">Continue with Facebook</button>
 
     <br>
-    <h6>Already joined?, <a href="#" class="hover:text-yellow_text font-bold"> Login to ArtBlock</a></h6>
+    <h6>Already joined?, <a href="#" routerLink="/Login" class="hover:text-yellow_text font-bold"> Login to ArtBlock</a></h6>
 
 </div>

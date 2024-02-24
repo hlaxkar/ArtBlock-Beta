@@ -25,6 +25,7 @@ import { ActionBarComponent } from './components/pop-up/action-bar/action-bar.co
 import { StoriesComponent } from './components/stories/stories.component';
 import { FormsModule } from '@angular/forms';
 import { UserprofileComponent } from './components/Profile/userprofile/userprofile.component';
+import { PostboxComponent } from './components/postbox/postbox.component';
 
 
 
@@ -51,6 +52,7 @@ import { UserprofileComponent } from './components/Profile/userprofile/userprofi
     StoriesComponent,
     ProSettingsComponent,
     UserprofileComponent,
+    PostboxComponent,
     
 
   ],

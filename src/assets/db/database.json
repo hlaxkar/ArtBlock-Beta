@@ -1,47 +1,96 @@
 {
-  "postList":[
+  "postList": [
     {
-      "createdDate":"",
-      "userName":"",
-      "tags":[],
-      "imageName":"",
-      "discription":"",
-      "postid":"",
-      "userid":""
+      "createdDate": "",
+      "userName": "",
+      "tags": [],
+      "imageName": "",
+      "discription": "",
+      "postid": "",
+      "userid": ""
     }
   ],
-"users":[
-  {
-    "userid":"",
-    "userName":"",
-    "name":"",
-    "email":"",
-    "dob":"",
-    "createdDate":"",
-    "bio":"",
-    "title":"",
-    "city":"",
-    "country":"",
-    "phoneNumber":""
-  }
-  
-],
-"comments": [
-  {
-  "comment_id": 1,
-  "user_id": 1,
-  "post_id": 1,
-  "content": "This is a great piece of art!",
-  "created_at": "2022-01-01T00:00:00.000Z"
-  },
-  {
-  "comment_id": 2,
-  "user_id": 2,
-  "post_id": 1,
-  "content": "I love the colors in this artwork!",
-  "created_at": "2022-01-02T00:00:00.000Z"
-  }
- 
+  "users": [
+    {
+      "userid": "",
+      "userName": "",
+      "name": "",
+      "email": "",
+      "dob": "",
+      "createdDate": "",
+      "bio": "",
+      "title": "",
+      "city": "",
+      "country": "",
+      "phoneNumber": ""
+    },
+    {
+      "id": "12",
+      "userName": "hlaxkar30",
+      "email": "hlaxkar30@gmail.com",
+      "password": "0000",
+      "name": "Haru Laxkar",
+      "pfp": "pfp2.png",
+      "banner": "banner1.jpg",
+      "bio": "Life is what happens to you while you scroll through Instagram",
+      "followers": 300,
+      "followings": 500
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "Ptg2c6D"
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "XvtiQpe"
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "ZWM2Keo"
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "IagBfvY"
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "BRbEqjG"
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "Fu9K9x0"
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "j8HU6Xj"
+    },
+    {
+      "useremail": "asd@asd",
+      "password": "ass@asddgsdsdfd",
+      "id": "M8ZWnXQ"
+    }
+  ],
+  "comments": [
+    {
+      "comment_id": 1,
+      "user_id": 1,
+      "post_id": 1,
+      "content": "This is a great piece of art!",
+      "created_at": "2022-01-01T00:00:00.000Z"
+    },
+    {
+      "comment_id": 2,
+      "user_id": 2,
+      "post_id": 1,
+      "content": "I love the colors in this artwork!",
+      "created_at": "2022-01-02T00:00:00.000Z"
+    }
   ]
-  
 }
