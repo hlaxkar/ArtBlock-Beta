@@ -7,22 +7,24 @@ import { UserprofileComponent } from './components/Profile/userprofile/userprofi
 import { SignupComponent } from './components/Loginpage/singup/signup.component';
 import { LoginComponent } from './components/Loginpage/login/login.component';
 const routes: Routes = [
-  {path:"",component:HomeComponent},
-  {path:"chat",component:HomeComponent},
-  {path:"Login", component:LogincardComponent, children:[
-    {path:'', component:LoginComponent},
-        {path:'logincard', component:LoginComponent},
-        {path:'signup', component:SignupComponent}
-       ]},
-  {path:"profile-settings",component:ProSettingsComponent},
-  {path:"userprofile",component:UserprofileComponent},
-  
-  
+  { path: "", component: HomeComponent },
+  { path: "chat", component: HomeComponent },
+  {
+    path: "Login", component: LogincardComponent, children: [
+      { path: '', component: LoginComponent },
+      { path: 'logincard', component: LoginComponent },
+      { path: 'signup', component: SignupComponent }
+    ]
+  },
+  { path: "profile-settings", component: ProSettingsComponent },
+  { path: "userprofile", component: UserprofileComponent },
+
+
 ];
- 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingcomponents = [HomeComponent,LogincardComponent, ProSettingsComponent]
+export const routingcomponents = [HomeComponent, LogincardComponent, ProSettingsComponent]
