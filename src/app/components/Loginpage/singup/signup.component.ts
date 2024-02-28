@@ -4,17 +4,13 @@ import { ApiService } from 'src/app/services/apis/api.service';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css']
+  styleUrls: ['./signup.component.css'],
 })
 export class SignupComponent implements OnInit {
   strength: any = '';
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService) {}
 
-  ngOnInit(): void {
-
-
-  }
- 
+  ngOnInit(): void {}
 
   calculateStrength(item: any) {
     if (item < 8) {
@@ -26,17 +22,14 @@ export class SignupComponent implements OnInit {
     }
   }
 
-
-  signupUser(data:any) {
-    
-    this.apiService.post<any>('users',data)
-    .subscribe(res => {
-      alert('Signup Successful');
-    }, err=>{
-      console.log(err.error);
-    });
-  
-   
-    
+  signupUser(data: any) {
+    this.apiService.post<any>('user/signup', data).subscribe(
+      (res) => {
+        alert('Signup Successful');
+      },
+      (err) => {
+        console.log(err.error);
+      }
+    );
   }
 }
